@@ -1,4 +1,3 @@
-
 const instructors = [
   {
     name: {
@@ -61,7 +60,9 @@ const getFullName = (instructor) => {
   return instructor.name.first + " " + instructor.name.last;
 };
 
-const greeting1 = getGreeting("AM", false);
+const greeting1 = getGreeting("CJ", true);
 console.log(greeting1);
+const greeting2 = getGreeting("AM", false);
+console.log(greeting2);
 // const greeting2 = getGreeting("CM", false);
 // console.log(greeting2);
