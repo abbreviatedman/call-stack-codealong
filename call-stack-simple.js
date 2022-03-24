@@ -1,3 +1,11 @@
+// These files are for running in the debugger and exploring the call stack.
+// Play around with them! (But be warned—the stack-overflow file has an error.)
+
+// How to set up the debugger!
+// 1. set a breakpoint
+// 2. call your function
+// 3. run the debugger
+
 const instructors = [
   {
     name: {
@@ -45,4 +53,5 @@ const getInstructorFullName = (initials) => {
 
 getInstructorFullName("CJ");
 getInstructorFullName("AM");
+// uncomment the below and run `node call-stack-simple.js` to see the call stack at work in an error message!
 // getInstructorFullName("JD");

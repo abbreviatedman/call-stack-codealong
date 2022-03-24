@@ -1,3 +1,11 @@
+// These files are for running in the debugger and exploring the call stack.
+// Play around with them! (But be warned—the stack-overflow file has an error.)
+
+// How to set up the debugger!
+// 1. set a breakpoint
+// 2. call your function
+// 3. run the debugger
+
 const instructors = [
   {
     name: {
@@ -61,8 +69,9 @@ const getFullName = (instructor) => {
 };
 
 const greeting1 = getGreeting("CJ", true);
-console.log(greeting1);
+console.log(greeting1); // "Hey, Colin!"
 const greeting2 = getGreeting("AM", false);
-console.log(greeting2);
+console.log(greeting2); // "Hello, Angie Munoz."
+// uncomment the below and run `node greetInstructor.js` to see the call stack at work in an error message!
 // const greeting2 = getGreeting("CM", false);
 // console.log(greeting2);
